@@ -3,7 +3,7 @@ import time
 
 # ===== Initializations =====
 score = 0
-score_requirement = 0 # initilize this
+score_requirement = 6 # initilize this
 
 # ===== Functions =====
 def sleep(x): # helper function to reduce typing
@@ -573,7 +573,7 @@ def castle(): # done
     sleep(2)
     print("King: Be my witness, tell them my name!\n")
     sleep(2)
-    choice = input("His name is (1) Richard III (2) Richmond")
+    choice = input("His name is (1) Richard III (2) Richmond\n")
     if choice == "1":
         score += 0
         sleep(2)
@@ -613,7 +613,7 @@ def castle(): # done
         sleep(2)
         battlefield()
 
-def battlefield():
+def battlefield(): # done
     global score
     
     print("...")
@@ -655,6 +655,25 @@ def battlefield():
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        
     """)
     sleep(2)
+    print("Walking onto the field of battle, you notice a severe lack of combatants.")
+    sleep(2)
+    print("You notice that the ground is littered with weapons, banners, and the long decayed corpses of those that fought.")
+    sleep(2)
+    print("If this battle happened a long time ago, what was making the noise that brought you here?")
+    choice = input("Will you (1) Try to get the spririts to appear (2) Continue on your way\n")
+    if choice == "1":
+        sleep(2)
+        print("You decide to call out, hoping to get a response from those that fought here.")
+        sleep(2)
+    elif choice == "2":
+        sleep(2)
+        print("This battle has already ended, and there is nothing for you to do.")
+        sleep(2)
+        print("It would be best for you to to continue your journey.")
+        sleep(2)
+        print("You decide to walk past the battlefield and head toward your next destination.")
+        sleep(2)
+        church()
     print("""
 ****+**++++*+**++%%#********+++++++=++++++=++==-:.      .          ....::::::-------:---=====++++==-
 ****+++++*+++**++*%#******+++++++=+======+===-.                      ..::--------------=====++++==--
@@ -712,8 +731,56 @@ def battlefield():
 @@@%%@%##@@@@@%%%%%%%#*++****#%@#@@@@@@@@@@@@@@@@@@@@@@@@#%@@@@@@@@@@@@@@@@@@@@@@@%###***=+*********
 @@@%%%%%#%%@@##@%@%%#%*+*****#%@@@@@@@@@@@@%%@@@@@@%@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+*********
           """)
+    sleep(2)
+    print("Upon calling out, a ghostly army manifests in front of you.")
+    sleep(2)
+    print("Noticing your presence, a soldier begins to approach you.\n")
+    sleep(2)
+    print("Soldier: Halt! Who dares disturb the resting place of fallen warriors.")
+    sleep(2)
+    print("Soldier: This field was the site of a mighty clash between two armies.")
+    sleep(2)
+    print("Soldier: We fled the battlefield in fear, abandoning our lord and our honor.")
+    sleep(2)
+    print("Soldier: Our spirits have been bound to this place ever since.")
+    sleep(2)
+    print("Soldier: You are the first soul we have seen in a very long time.")
+    sleep(2)
+    print("Soldier: We can tell you the way forward, if and only if you can help us be redeemed for our cowardice.\n")
+    sleep(2)
+    choice = input("Tell them to (1) Ask their lord for forgiveness (2) Redeem themselves in battle\n")
+    if choice == "1":
+        score += 1
+        sleep(2)
+        print("You tell the soldier that if they abandoned their lord, perhaps his spirit can be found.")
+        sleep(2)
+        print("You advise them to repent their actions and ask for forgiveness.")
+        sleep(2)
+        print("The soldier agrees with you, and the ghostly army vanishes into thin air.")
+        sleep(2)
+        print("Looking around, you notice a path has been created.")
+        sleep(2)
+        print("You decide to press forward.\n")
+        sleep(2)
+        church()
+    elif choice == "2":
+        score += 2
+        sleep(2)
+        print("You tell the soldier that perhaps their lord may still be alive.")
+        sleep(2)
+        print("You explain that you didn't see their lord's spirit anywhere, so he must have survived.")
+        sleep(2)
+        print("You advise them to fight for their lord one last time if they wish to be redeemed.")
+        sleep(2)
+        print("The soldier agrees with you, and the ghostly army vanishes into thin air.")
+        sleep(2)
+        print("Looking around, you notice a path has been created.")
+        sleep(2)
+        print("You decide to press forward.\n")
+        sleep(2)
+        church()
     
-def church():
+def church(): # done
     global score
     
     print("...")
@@ -760,6 +827,14 @@ def church():
 @@@@@@.%*++=   :@@@.              . .:----:-----==*++++***++++=====+====-==+#@@@@*++#=:@%  --=*=-@= 
    +-.     ...         .  .   .                                     .  .          .   :===.      *:     
     """)
+    sleep(2)
+    print("You come across a run down church.")
+    sleep(2)
+    print("Walking inside, you notice that the inside is in pristine condition.")
+    sleep(2)
+    print("As you explore deeper, you feel a chill run down your spine.")
+    sleep(2)
+    print("Suddenly, you hear a feminine shriek ring through the church.")
     sleep(2)
     print("""
 ----------------------------------------------------------------------------------------------------
@@ -844,8 +919,58 @@ def church():
 --+#==================+===============+++++==++++++++++++=+==========================+==========-+##
 -----=-================================++++++=++++++++++++=====+=================================-=#          
           """)
-
-def maze():
+    sleep(2)
+    print("A woman in a white dress floats toward you, her eyes filled with anger.")
+    sleep(2)
+    print("You realize that you have awakened the spirit of a vengeful bride.\n")
+    sleep(2)
+    print("Bride: How dare you disturb my eternal rest!")
+    sleep(2)
+    print("Bride: I was wronged in life, and now I seek vengeance on all who enter this sacred place.")
+    sleep(2)
+    print("Bride: For disturbing me, you shall pay the ultimate price.")
+    sleep(2)
+    print("Bride: Prepare to join the ranks of those who came before you!\n")
+    sleep(2)
+    choice = input("Will you (1) Try to reason with her (2) Try to fight back (3) Flee\n")
+    if choice == "1":
+        score += 2
+        sleep(2)
+        print("You correctly assume that there is no way you can fight a ghost.")
+        sleep(2)
+        print("You explain to the ghost that she should let go of her anger, to allow her soul to move on.")
+        sleep(2)
+        print("The ghost is initially hesitant, but eventually, she backs down.")
+        sleep(2)
+        print("Before disappearing, she directs you toward the back of the church.\n")
+        sleep(2)
+        maze()
+    elif choice == "2":
+        score += 0
+        sleep(2)
+        print("The idea to fight back crosses your mind.")
+        sleep(2)
+        print("But you ultimately decide that fighting a ghost would not be effective.")
+        sleep(2)
+        print("Looking around, you find yourself drawn toward the back of the church.")
+        sleep(2)
+        print("Before the ghost is able to harm you, you find yourself running toward the back.\n")
+        sleep(2)
+        maze()
+    elif choice == "3":
+        score += 0
+        sleep(2)
+        print("You decide that fleeing is the best course of action.")
+        sleep(2)
+        print("Looking around, you realize that you are trapped, with no exit in sight.")
+        sleep(2)
+        print("Suddenly, you find yourself gravitating toward the back of the church.")
+        sleep(2)
+        print("Before the ghost is able to harm you, you find yourself running toward the back.\n")
+        sleep(2)
+        maze()
+        
+def maze(): # done
     global score
     global score_requirement
     
@@ -888,7 +1013,82 @@ def maze():
 ######++=========++#############*+============*******+===========++*#############+==========+*######              
     """)
     sleep(2)
-    print("Before you stands 4 ")
+    print("With the church far behind you, you now find yourself standing before 4 corridors.")
+    sleep(2)
+    print("Soon enough, you discover a familiar face approaching you.")
+    sleep(2)
+    print("""
+@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*%@**@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+***+=+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+====--+*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#
+=--==-:=+*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+=
++===+=-:-=*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+--
+@%+==++-::-+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#--=+
+@@@#+=+=::::-%@@@@@@@@%##**#%%@@@@@@@@@@@@@%-::==
++++======--::-%@@@@@@#*+-=#%%%%%@@@@@@@@@@@*::-+=
+@#+====+++-:.:=@@@@@@%*:::-+#%%%%%@@@@@@@@%-::==-
+**+=---=+*+::.:*@@@@%%*++-=+==%%@%%@@@@@@@=:::+=-
+@%*+=--===+::.:-%@@@@@%+--=:-=*%@@@@@@@@@+:::-+=:
+@@@%#+---==:...:#@@@%%@*--**==*%%@@@@@@@#::.-++=:
+@%%#*+--==+-:..:*@@@@%%@%+==+*%%%@@@@@@#::.:-*=--
+%#***+=-====:..::%@%%%%%%*+****%%@@%%%#=-:.:-+==-
+#**++=----==::.::-*%%%@%%#-==+*#@@@%%%%*+::-+=--:
+%%%%#+==---+=::::*#%%%%%%#====++%@@@%%#*-::===-:-
+@#**++=----=**=:+*#%%%%%%%=:--:-+#%%%%%#*==+=----
+##%**+==+===+***+#%%%%%%%*+::::-**%%%%%%#*++===--
+###**+----===*#*+*%%%#%##*=+-::-=+%%%%%%%%#*+==--
+@@%*+==---==+*+-:=*%%%%%%#---::::-+%%%%%@%%##*===
+@#*+++=-====++=--+%@%@@%%#+:---:::-+=*%%%@%##*+==
+##%#+=====++++---+#@@@%%#=-+*+==-=+==:+#%%%%##+==
+@%**++*++++*+-:-+#%%@%%%+:::-=+==---::-+%#%%#*++=
+#*#**#+++*##-:-=###%%%#*-------=---=:-=*%%%%#**==
+##*%%**#%%#---=*###%%%=-:------++==--=+#%%%%%%*==
+#%@#*#%@@+:---+##*#%%#=---:----=-==-=+*#*%@@@@@#=
+@%#%@@@#-::--=##***##=-::::--:--====+**+=+%@@@@@*
+#%@@@@#-:--=+%%+****+:-::-:-----====+#+=---*@@@@%
+@@@@@+::-=*%@%#+++**=-::--:---=-===+*##+--:-+%%%%
+@@@#-:-=*%%%%%++++*=:--::--=--=-===+*#**+=---=#%%
+@#-:-+#@@@%%%#==+*+::-:=---=--=-++++***++**=-::=#
+:-=*%@@@@@%%%+==+*-:-::----===+=++++*****#%%#+---
+-#@@@@@@@@@%#-=+*=:--:-----===+=++++*#***#%%@@%+-
+@@@@@@@@@%%%==+**--:::=:=---++++*+++*#*++#%@@@%%+
+@@@@@@@@%%%++++**-:::=-=---==+++*=++**++*%@%%@@@#
+@@@@@@@@%%=+++*##:::::-:::-===**==+++**+*@@@@@%%@
+@@@@@@@@%++++**##::-::-:::-=+==--=++*#+=#%@%@@%%@
+@@@@@@@%#=++**##*--:::::::-=+*=+==++**+=#%%%%%%@@
+@@@@@@@%=++****#+=--:::::--==+*++==*#*+=#%%%%%%@@
+          """)
+    sleep(2)
+    print("Psychopomp: Congratulations for making it this far.")
+    sleep(2)
+    print("Psychopomp: You have reached the end of your journey.")
+    sleep(2)
+    print("Psychopomp: Now, you have to make one last choice.")
+    sleep(2)
+    print("Psychopomp: One of these four corridors will lead you to redemption, and carry your soul to the afterlife.")
+    sleep(2)
+    print("Psychopomp: But if you pick incorrectly, your soul will be tied to this place until the end of time.")
+    sleep(2)
+    print("Psychopomp: If you have made the correct decisions in your journey, you will know which corridor is true.")
+    sleep(2)
+    print("Psychopomp: This is all I can say. Good Luck.\n")
+    sleep(2)
+    if score >= score_requirement:
+        print("Reflecting on your journey up until this point, you feel that you have made the correct decisions.")
+        sleep(2)
+        print("You believe that the 3rd corridor will bring you salvation.")
+        sleep(2)
+    else:
+        print("Reflecting on your journey up until this point, you feel that you have made some mistakes.")
+        sleep(2)
+        print("You are unsure which corridor will bring you salvation.")
+        sleep(2)
+    choice = input("Which corridor will you enter? (1) (2) (3) (4)\n")
+    if choice == "3":
+        game_win()
+    else:
+        game_over()
 
 def credits(): # complete
     print("\nThank you for playing this game!")
