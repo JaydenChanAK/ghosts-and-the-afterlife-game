@@ -424,7 +424,7 @@ def village(): # done
         print("You decide to head toward the imposing construct.")
         sleep(2)
         print("Turning around one last time, you notice the boy talking to his 'ghostly father'.\n")
-        sleep()
+        sleep(2)
         castle()
     elif choice == "2":
         score += 0
